@@ -71,7 +71,6 @@ Isi file index.html bisa sederhana, misalnya:
   </form>
 </body>
 </html>
-
 ```
 ### 🔧 Langkah 4: Jalankan dan Aktifkan Apache
 ```
