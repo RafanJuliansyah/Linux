@@ -44,4 +44,29 @@ Modul ini memantau pola traffic HTTP mencurigakan seperti:
 yum install -y httpd epel-release perl nc
 ```
 
+
 ### 🔧 Langkah 2: Install modul mod_evasive dan mod_security
+
+```
+yum install -y mod_evasive mod_security
+```
+
+### 🔧 Langkah 3: Buat Direktori dan Halaman Index
+```
+mkdir -p /var/www/html
+nano /var/www/html/index.html
+```
+Isi file index.html bisa sederhana, misalnya:
+```
+<h1>Testing mod_evasive</h1>
+```
+### 🔧 Langkah 4: Jalankan dan Aktifkan Apache
+```
+systemctl start httpd
+systemctl enable httpd
+```
+
+### 🔧 Langkah 5: Nonaktifkan Sementara SELinux
+```
+setenforce 0
+```
