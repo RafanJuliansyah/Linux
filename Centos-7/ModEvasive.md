@@ -58,7 +58,20 @@ nano /var/www/html/index.html
 ```
 Isi file index.html bisa sederhana, misalnya:
 ```
-<h1>Testing mod_evasive</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Simple</title>
+</head>
+<body>
+  <form>
+    <label>Nama:</label>
+    <input type="text" name="nama" placeholder="Masukkan nama">
+    <button type="submit">Kirim</button>
+  </form>
+</body>
+</html>
+
 ```
 ### 🔧 Langkah 4: Jalankan dan Aktifkan Apache
 ```
