@@ -40,7 +40,8 @@ Modul ini memantau pola traffic HTTP mencurigakan seperti:
 
 ### 🔧 Langkah 1: Install Paket Dasar
 
-```bash
+```
 yum install -y httpd epel-release perl nc
+```
 
 ### 🔧 Langkah 2: Install modul mod_evasive dan mod_security
