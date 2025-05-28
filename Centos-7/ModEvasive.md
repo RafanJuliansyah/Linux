@@ -1,5 +1,5 @@
 
-# 🛡️ Write-Up: mod_evasive di Apache (CentOS 7)
+# Write-Up: mod_evasive di Apache (CentOS 7)
 
 ## 📌 Pengertian mod_evasive
 
