@@ -45,7 +45,8 @@ PermitRootLogin no
 
 📷 **Screenshot hasil:**
 
-![[Screenshot 2025-06-14 131206 1.png]]
+![Screenshot 2025-06-14 131206](https://github.com/user-attachments/assets/3c08839f-ac80-4276-9dc8-703b3c8251b0)
+
 ### 📌 Terapkan perubahan:
 
 ```
