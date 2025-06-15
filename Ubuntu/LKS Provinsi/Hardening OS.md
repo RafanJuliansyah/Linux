@@ -43,10 +43,6 @@ PermitRootLogin no
 - Hal ini sangat penting karena root adalah akun dengan hak tertinggi dan sering menjadi target brute-force attack.
     
 
-📷 **Screenshot hasil:**
-
-![Screenshot 2025-06-14 131206](https://github.com/user-attachments/assets/3c08839f-ac80-4276-9dc8-703b3c8251b0)
-
 ### 📌 Terapkan perubahan:
 
 ```
@@ -55,11 +51,7 @@ sudo systemctl restart ssh
 
 - Perintah ini **me-restart service SSH**, sehingga perubahan di konfigurasi tadi akan langsung diterapkan.
     
-
-📷 **Screenshot hasil:**
-
-![[Screenshot 2025-06-14 131524 1.png]]
-
+\
 ---
 
 ## 🔐 **2. Ganti Port Default SSH ke 2202**
@@ -84,9 +76,7 @@ Port 2202
 - Port ini digunakan agar server tidak mudah dideteksi oleh port scanner yang menargetkan port default.
     
 
-📷 **Screenshot hasil:**
 
-![[Screenshot 2025-06-14 131605.png]]
 ### 📌 Terapkan perubahan:
 
 ```
@@ -95,13 +85,6 @@ sudo systemctl restart ssh
 
 - Perlu dilakukan agar **konfigurasi port baru** langsung aktif.
     
-
-📷 **Screenshot hasil:**
-###### Status sebelum di restart
-![[Screenshot 2025-06-14 131652.png]]
-###### Status sesuad di restart
-![[Screenshot 2025-06-14 131713.png]]
-
 ---
 
 ## 🧪 **Uji Akses SSH ke Port Baru**
@@ -119,7 +102,8 @@ ssh -p 2202 ubuntu@ip-server
 
 📷 **Screenshot hasil:**
 
-![[Screenshot 2025-06-14 131926.png]]
+![Screenshot 2025-06-14 131713](https://github.com/user-attachments/assets/8be98d0b-ca38-4d23-bbd4-5cdb69368c17)
+
 
 ---
 
@@ -151,12 +135,8 @@ sudo ufw enable
 - Mengaktifkan UFW secara permanen.
     
 - Semua aturan yang telah diatur sebelumnya akan mulai diterapkan.
+
     
-
-📷 **Screenshot hasil:**
-
-![[Screenshot 2025-06-14 132840.png]]
-
 ---
 
 ## 🔧 **4. Nonaktifkan `cups` dan `avahi-daemon` (Jika Ada)**
@@ -220,10 +200,6 @@ adminlks ALL=(ALL) NOPASSWD:ALL
 
 - User `adminlks` bisa menjalankan semua perintah `sudo` **tanpa harus memasukkan password**.
     
-
-📷 **Screenshot hasil:**
-
-![[Screenshot 2025-06-14 133442.png]]
 
 > jika saat sudo su masih di mintai password coba nonaktifan dengan command **#** ini pada visudo command *%sudo ALL=(ALL:ALL) ALL_* 
 
