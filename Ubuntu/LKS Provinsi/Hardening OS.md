@@ -50,8 +50,8 @@ sudo systemctl restart ssh
 ```
 
 - Perintah ini **me-restart service SSH**, sehingga perubahan di konfigurasi tadi akan langsung diterapkan.
+
     
-\
 ---
 
 ## 🔐 **2. Ganti Port Default SSH ke 2202**
@@ -99,11 +99,6 @@ ssh -p 2202 ubuntu@ip-server
     
 - `user@ip-server` adalah **user** yang akan login dan **alamat IP/server** tujuan.
     
-
-📷 **Screenshot hasil:**
-
-![Screenshot 2025-06-14 131713](https://github.com/user-attachments/assets/8be98d0b-ca38-4d23-bbd4-5cdb69368c17)
-
 
 ---
 
